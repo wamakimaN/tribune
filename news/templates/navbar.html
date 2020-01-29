@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="{% url 'newsToday' %}">The Moringa Tribune</a>
+      </div>
+      <div class="col-sm-4 col-md-4 navbar-right">
+        <form class="form-inline" role="search" action="{% url 'search_results' %}">
+          <div class="md-form my-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" name="article">
+          </div>
+        </form>
+        
+      </div>
+    </div>
+  </nav>
+</body>
+
+</html>
